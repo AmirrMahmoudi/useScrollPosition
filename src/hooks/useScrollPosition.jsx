@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const useScrollPosition = () => {
+export function useScrollPosition() {
   const [isBottom, setIsBottom] = useState(false);
 
   useEffect(() => {
@@ -11,5 +11,6 @@ export const useScrollPosition = () => {
       );
     });
   }, []);
+
   return { isBottom };
-};
+}
